@@ -1,0 +1,18 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Tarea5
+[Library]
+Tarea5=.\Tarea5\Tarea5.lib
+[$LibMap$]
+Tarea5=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
