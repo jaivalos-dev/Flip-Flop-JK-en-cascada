@@ -1,0 +1,74 @@
+# Design: Design Tarea5 already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work Tarea5 -2002  $dsn/src/Compuertas.vhd
+# Compile Entity "CompAND2"
+# Compile Architecture "CompAND2" of Entity "CompAND2"
+# Compile Entity "CompOR2"
+# Compile Architecture "CompOR2" of Entity "CompOR2"
+# Compile Entity "CompNOT1"
+# Compile Architecture "CompNOT1" of Entity "CompNOT1"
+# Top-level unit(s) detected:
+# Entity => CompNOT1
+# Entity => CompOR2
+# Entity => CompAND2
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work Tarea5 -2002  $dsn/src/Compuertas.vhd
+# Compile Entity "CompAND2"
+# Compile Architecture "CompAND2" of Entity "CompAND2"
+# Compile Entity "CompOR2"
+# Compile Architecture "CompOR2" of Entity "CompOR2"
+# Compile Entity "CompNOT1"
+# Compile Architecture "CompNOT1" of Entity "CompNOT1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work Tarea5 -2002  $dsn/src/FlipFlopJK.vhd
+# Compile Entity "FlipFlopJK"
+# Compile Architecture "FlipFlopJK" of Entity "FlipFlopJK"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work Tarea5 -2002  $dsn/src/Tarea5.vhd
+# Compile Entity "tarea5"
+# Compile Architecture "tarea5" of Entity "tarea5"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+tarea5 tarea5 tarea5
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6423 kB (elbread=427 elab2=5857 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\Tarea5\Tarea5\src\wave.asdb
+#  11:49, lunes, 19 de agosto de 2024
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/tarea5/QA}
+# add wave -noreg {/tarea5/QB}
+# add wave -noreg {/tarea5/clk}
+# add wave -noreg {/tarea5/reset}
+# add wave -noreg {/tarea5/QC}
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/Tarea5/Tarea5/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run @500ns
+# KERNEL: stopped at time: 500 ns
+run @900ns
+# KERNEL: stopped at time: 900 ns

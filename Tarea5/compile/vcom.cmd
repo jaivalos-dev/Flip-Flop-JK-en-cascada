@@ -1,0 +1,1 @@
+-w -d c:/My_Designs/Tarea5/Tarea5/compile -s c:/My_Designs/Tarea5/library.cfg -j c:/My_Designs/Tarea5/Tarea5/projlib.cfg -work Tarea5 -O3 -e 100 -work Tarea5 -2002 c:/My_Designs/Tarea5/Tarea5/src/Tarea5.vhd 

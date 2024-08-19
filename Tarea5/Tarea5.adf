@@ -16,3 +16,15 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+[Files]
+/Compuertas.vhd=-1
+/FlipFlopJK.vhd=-1
+/Tarea5.vhd=-1
+[Files.Data]
+.\src\Compuertas.vhd=VHDL Source Code
+.\src\FlipFlopJK.vhd=VHDL Source Code
+.\src\Tarea5.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=tarea5|tarea5|0
+ShowHide=ShowTopLevel
+Selected=
